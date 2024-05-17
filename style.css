@@ -16,8 +16,9 @@ html {
 body{
     margin: 0px;
     font-family: 'belisa', arial, sans-serif;
-    background: url(imagens/personagensFundo.png) no-repeat center center fixed;
+    background: url(imagens/personagensFundo.png) no-repeat right center fixed;
     background-size:cover;
+    transform-style:flat;
 
     height: 100vh;
     
