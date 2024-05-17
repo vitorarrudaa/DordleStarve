@@ -19,7 +19,7 @@ body{
     background: url(imagens/personagensFundo.png) no-repeat right center fixed;
     background-size:cover;
     transform-style:flat;
-
+    height: 100dvh;
     height: 100vh;
     
 }
@@ -35,6 +35,7 @@ header > h1{
     text-shadow: 0 0 7px white, 0 0 7px white, 0 0 7px white, 0 0 50px white;
 }
 header > h2{
+    font-size: 1.8em;
     margin-bottom: 0px;
     font-family: 'belisa', arial, sans-serif;
     color: #F49F0A;
