@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@font-face{
+    font-family: belisa;
+    src: url(fonts/belisa_plumilla.ttf);
+}
+@font-face{
+    font-family: konstant;
+    src: url(fonts/Konstanting\ Regular.ttf);
+}
+html {
+    height: 100%;
+}
+body{
+    font-family: belisa;
+    display:flex;
+    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+    background: url(imagens/personagensFundo.png) no-repeat center fixed;
+    background-size:cover;
+}
+main{
+    text-align: center;
+    display: grid;
+    height:100vh;
+}
+header{
+    
+}
+header > h1 {
+    font-size: 100px;
+    margin: 0px;
+    text-shadow: 0 0 7px white, 0 0 7px white, 0 0 7px white, 0 0 50px white; 
+    font-family: konstant, arial, sans-serif;
+}
+header > h2 {
+    font-size: 30px;
+    color: #F49F0A;
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black; 
+}
+.opcoes{
+    background-image: linear-gradient(to left, #F49F0A, #eebf3d);
+    border-radius: 15px;
+    box-shadow: 5px 10px 5px black;
+    margin: 30px;
+}
+.opcoes > h2 {
+    font-size: 40px;
+    margin: 0px;
+    padding-top: 10px;
+}
+.opcoes > h3 {
+    margin: 0px;
+    font-size: 20px;
+}
+footer{
+    align-self: flex-end;
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 20px black, 1px 1px 20px black, 1px 1px 20px black;
+}
