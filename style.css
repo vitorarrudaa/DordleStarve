@@ -7,55 +7,75 @@
     font-family: konstant;
     src: url(fonts/Konstanting\ Regular.ttf);
 }
+*{
+    margin: 0px;
+}
 html {
     height: 100%;
 }
 body{
-    font-family: belisa;
-    display:flex;
     margin: 0px;
-    flex-direction: column;
-    align-items: center;
-    background: url(imagens/personagensFundo.png) no-repeat center fixed;
+    font-family: 'belisa', arial, sans-serif;
+    background: url(imagens/personagensFundo.png) no-repeat right top fixed;
     background-size:cover;
-}
-main{
-    text-align: center;
-    display: grid;
-    height:100vh;
-}
-header{
+
+    height: 100vh;
     
 }
-header > h1 {
-    font-size: 100px;
-    margin: 0px;
-    text-shadow: 0 0 7px white, 0 0 7px white, 0 0 7px white, 0 0 50px white; 
-    font-family: konstant, arial, sans-serif;
+header{
+    flex: none;
+    text-align: center;
+    margin-bottom: 50px;
 }
-header > h2 {
-    font-size: 30px;
+header > h1{
+    margin: 0px;
+    font-family: 'konstant', arial, sans-serif;
+    font-size: 6em;
+    text-shadow: 0 0 7px white, 0 0 7px white, 0 0 7px white, 0 0 50px white;
+}
+header > h2{
+    margin-bottom: 0px;
+    font-family: 'belisa', arial, sans-serif;
     color: #F49F0A;
     text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black; 
 }
+.mainContainer{
+    min-height:100vh;
+    display:flex; 
+    flex-direction:column; 
+    justify-content:space-between;
+}
+.container{
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+}
 .opcoes{
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.219);
+    min-width: 250px;
+    text-align: center;
     background-image: linear-gradient(to left, #F49F0A, #eebf3d);
     border-radius: 15px;
     box-shadow: 5px 10px 5px black;
-    margin: 30px;
 }
-.opcoes > h2 {
-    font-size: 40px;
-    margin: 0px;
-    padding-top: 10px;
+.opcoes > h2{
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
-.opcoes > h3 {
-    margin: 0px;
-    font-size: 20px;
+.opcoes > h3{
+    margin-top: 6px;
+    margin-bottom: 10px;
 }
 footer{
-    align-self: flex-end;
+    flex-wrap: nowrap;
+    text-align: center;
     font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
     color: white;
     text-shadow: 1px 1px 20px black, 1px 1px 20px black, 1px 1px 20px black;
 }
