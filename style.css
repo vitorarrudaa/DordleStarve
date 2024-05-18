@@ -14,7 +14,6 @@ html {
     height: 100%;
 }
 body{
-    margin: 0px;
     font-family: 'belisa', arial, sans-serif;
     background: url(imagens/personagensFundo.png) no-repeat right center fixed;
     background-size:cover;
@@ -28,7 +27,6 @@ header{
     margin: 20px 10px 50px 10px;
 }
 header > h1{
-    margin: 0px;
     font-family: 'konstant', arial, sans-serif;
     font-size: 6em;
     text-shadow: 0 0 7px white, 0 0 7px white, 0 0 7px white, 0 0 50px white;
@@ -55,6 +53,7 @@ header > h2{
     align-items: center;
 }
 .opcoes{
+    cursor:pointer;
     text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.219);
     min-width: 250px;
     text-align: center;
@@ -68,6 +67,7 @@ header > h2{
     margin-bottom: 0px;
 }
 .opcoes > h3{
+    font-size: 1.6em ;
     margin-top: 6px;
     margin-bottom: 10px;
 }
