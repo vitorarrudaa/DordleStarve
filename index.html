@@ -8,30 +8,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body">
-    <main class="mainContainer""><!--Do tipo conteiner para dividir igualmente os blocos do site (cabeçalho, botoes e rodapé)-->
+    <main class="mainContainer"><!--Do tipo conteiner para dividir igualmente os blocos do site (cabeçalho, botoes e rodapé)-->
         <header> 
             <h1>Dordle Starve</h1>
-            <h2>Advinhe um personagem todo dia</h2>
+            <h2>Advinhe algo novo todo dia</h2>
         </header>
 
-        <section class="container"><!--Do tipo conteiner para dividir igualmente os botoes-->
-               <nav class="opcoes">
-                    <h2>MODO CITAÇAO</h2>
-                    <h3>Com uma frase</h3>
-               </nav class="opcoes"><!--opcoes para os jogos-->
-               <nav class="opcoes">
-                    <h2>MODO FALA</h2>
-                    <h3>Com um som</h3>
-               </nav>      
-               <nav class="opcoes">
-                    <h2>MODO SKIN</h2>
-                    <h3>Com uma skin</h3>
-               </nav> 
-                
-               </nav>
-           </nav>
+        <section class="container nolink" id="conteudo"><!--Do tipo conteiner para dividir igualmente os botoes-->
+               <a href="#">
+                   <nav class="opcoes">
+                        <h2>CLASSICO</h2>
+                        <h3>Com dicas gerais</h3>
+                   </nav class="opcoes"><!--opcoes para os jogos-->
+               </a>
+               <a href="#">
+                   <nav class="opcoes">
+                        <h2>CITAÇAO</h2>
+                        <h3>Com uma frase</h3>
+                   </nav>
+               </a>
+               <a href="modoReferencia.html">
+                   <nav class="opcoes">
+                        <h2>REFENCIA</h2>
+                        <h3>Com uma citaçao</h3>
+                        <!--
+                            ITEM - FILTRO - CRAFTING STATION - PODE QUEIMAR - TEMPO DE QUEIMA - TOTAL STACK - 
+                        -->
+                   </nav>
+               </a>
+            </a> 
+               <script>
+                    document.querySelectorAll('a').forEach (link => {
+                    const conteudo = document.getElementById('conteudo')
+        
+                    link.onclick = function(e){
+                        e.preventDefault()
+                        fetch(link.href)
+                            .then (resp => resp.text())
+                            .then (html => conteudo.innerHTML = html)
+                    }
+                    })
+                </script>
         </section>
-        <footer>
+        <footer class="nolink">
             <p>Projeto em desenvolvimento...</p>
         </footer>
     </main>
