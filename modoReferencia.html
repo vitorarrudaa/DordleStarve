@@ -6,47 +6,37 @@
     <title>Modo Referencia</title>
 </head>
 <body>
-    <section id="containerJogo" class="container">
-        <section id="dicaDoDia" class="opcoes">
-            <h3>Inspeçao do dia: </h3>
-            <p class="frase">
-                "The most malleable of metals, but let's see how this chops."
-            </p>
+   <section class="container" id="secaoJogo"> <!--caixa onde vao ter os elementos do jogo escolhido-->
+        <section class="container opcoes" id="secaoDica">
+            <div class="container">
+                <h1>Citacao do dia:</h1>
+                <p>What else will I use gold for around here?</p>
+            </div>
         </section>
-        <section id="entrada">
-            <form action="">
-                <input type="text" name="entradaUsuario" id="iEntradaUsuario">
+        <section class="container" id="secaoEntrada"><!--caixa onde vai ter a entrada de texto e botao enviar-->
+            <div class="container">
+                <input type="text" autocomplete="off" name="tentativa" id="iTentativa">
                 <input type="submit" value="Enviar">
-            </form>
+            </div>
         </section>
-        <section class="resultado">
-            <section id="bloco">
-                <div id="categorias" class="flex">
-                    <div class="blocoDicas flex">
-                        <p >ITEM</p>
-                    </div>
-                    <div class="blocoDicas flex">
-                        <p>BANCADA</p>
-                    </div>
-                    <div class="blocoDicas flex">
-                        <p>QUEIMAVEL</p>
-                    </div>
-                    <div class="blocoDicas flex">
-                        <p>BURN TIME</p>
-                    </div>
-                    <div class="blocoDicas flex">
-                        <p>STACK</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="blocoDicas flex" id="item1"><img src="imagens/Luxury_Axe.webp" alt="Machado de Ouro"></div>
-                    <div class="blocoDicas flex" id="item2"><img src="imagens/48px-Icon_Science.webp" alt=""></div>
-                    <div class="blocoDicas flex" id="item3"><img src="imagens/50px-Fire_Icon.webp" alt=""></div>
-                    <div class="blocoDicas flex" id="item4"><img src="imagens/50px-Fuel_Value_Icon.webp" alt=""></div>
-                    <div class="blocoDicas flex" id="item5"><img src="imagens/50px-Stack_Icon.webp" alt=""></div>
-                </div>
-            </section>
+        <section class="container" id="secaoResposta"><!--caixa onde vai ter a area das resposta, como resultado anterior e atual-->
+            <div class="containerBloco" id="cabecalhoResposta"><!--bloco cabeçalho-->
+                <div class="containerBloco bloco"><p>ITEM</p></div>
+                <div class="containerBloco bloco"><p>BANCADA</p></div>
+                <div class="containerBloco bloco"><p>SLOT</p></div>
+                <div class="containerBloco bloco"><p>QUEIMA</p></div>
+                <div class="containerBloco bloco"><p>USOS</p></div>
+                <div class="containerBloco bloco"><p>STACK</p></div>
+            </div>
+            <div class="containerBloco" id="blocoResposta"><!--bloco de quadrados de acertos-->
+                <div class="containerBloco bloco" id="item1"><img src="imagens/Luxury_Axe.webp" alt="Machado de Ouro"></div>
+                <div class="containerBloco bloco" id="item2"><img src="imagens/Alchemy_Engine.webp" alt=""></div>
+                <div class="containerBloco bloco" id="item3"><img src="imagens/32px-Equip_slot_hud.webp" alt=""></div>
+                <div class="containerBloco bloco" id="item4"><img src="imagens/50px-Fire_Icon.webp" alt=""></div>
+                <div class="containerBloco bloco" id="item5"><img src="imagens/50px-Durability_Icon.webp" alt=""></div>
+                <div class="containerBloco bloco" id="item5"><img src="imagens/50px-Stack_Icon.webp" alt=""></div>
+            </div>
         </section>
-    </section>
+   </section>
 </body>
 </html>

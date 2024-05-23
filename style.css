@@ -25,12 +25,12 @@ header{
     text-align: center;
     margin: 20px 10px 50px 10px;
 }
-header > h1{
+header  h1{
     font-family: 'konstant', arial, sans-serif;
     font-size: 6em;
     text-shadow: 0 0 7px white, 0 0 7px white, 0 0 7px white, 0 0 50px white;
 }
-header > h2{
+header  h2{
     font-size: 1.8em;
     margin-bottom: 0px;
     font-family: 'belisa', arial, sans-serif;
@@ -44,12 +44,14 @@ header > h2{
     justify-content:space-between;
 }
 .container{
-    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 30px;
     justify-content: flex-start;
     align-items: center;
+}
+#conteudo{
+    flex: 1 0 auto;
+    gap: 30px;
 }
 .nolink > a{
     all: unset;
@@ -83,7 +85,7 @@ footer{
     color: white;
     text-shadow: 1px 1px 20px black, 1px 1px 20px black, 1px 1px 20px black;
 }
-.resultado{
+/*.resultado{
     background-color: rgba(0, 0, 0, 0.438);
     border-radius: 10px;
     padding: 3px;
@@ -163,4 +165,71 @@ form{
     justify-content: center;
     align-content: space-around;
     align-items: center;
+}*/
+#secaoJogo{
+    align-content: space-around;
+    min-height: 500px;
+    min-width: 400px;
+    gap: 30px;
+}
+#secaoDica h1{
+    font-size: 1.8em;
+    padding-top: 10px;
+}
+#secaoDica p{
+    font-size: 2.3em;
+    padding: 10px;
+}
+input[type=text] {
+    border: 5px solid black;
+    border-radius: 20px;
+    height: 30px;
+    width: 200px;
+    cursor: text;
+    font-size: 1.5em;
+}
+input[type=submit]{
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    font-size: 1.6em;
+    font-family: belisa;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.bloco{
+    margin: 1px;
+    min-width: 65px;
+    height: 65px;
+    border: 3px solid black;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.863);
+}
+
+.containerBloco{
+    display: flex;
+}
+#secaoResposta{
+    display: flex;
+    flex: 1 0 auto;
+    align-items: flex-end;
+}
+#cabecalhoResposta p{
+    font-size: 1.5em;
+    padding: 2px;
+}
+#cabecalhoResposta .bloco{
+    background-image: linear-gradient(to left, #F49F0A, #eebf3d);
+}
+#blocoResposta img{
+    height: 100%;
+    width: 100%;
+}
+#blocoResposta .bloco{
+    background-color: lightgreen;
 }
