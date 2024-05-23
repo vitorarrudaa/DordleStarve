@@ -12,6 +12,7 @@
 }
 html {
     height: 100%;
+    margin: 10px;
 }
 body{
     font-family: 'belisa', arial, sans-serif;
@@ -38,6 +39,7 @@ header  h2{
     text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black; 
 }
 .mainContainer{
+    border: 10px;
     min-height:100vh;
     display:flex; 
     flex-direction:column; 
@@ -169,8 +171,9 @@ form{
 #secaoJogo{
     align-content: space-around;
     min-height: 500px;
-    min-width: 400px;
+    max-width: 250px;
     gap: 30px;
+    padding: 20px;
 }
 #secaoDica h1{
     font-size: 1.8em;
@@ -202,8 +205,8 @@ input[type=submit]{
 }
 .bloco{
     margin: 1px;
-    min-width: 65px;
-    height: 65px;
+    min-width: 60px;
+    min-height: 60px;
     border: 3px solid black;
     border-radius: 5px;
     align-items: center;
@@ -219,6 +222,10 @@ input[type=submit]{
     flex: 1 0 auto;
     align-items: flex-end;
 }
+/*.scroll  div{
+    display: inline-block;
+    text-align: center;
+}*/
 #cabecalhoResposta p{
     font-size: 1.5em;
     padding: 2px;
